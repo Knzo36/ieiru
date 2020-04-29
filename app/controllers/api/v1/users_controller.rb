@@ -17,7 +17,7 @@ module Api
       end
 
       def user_params
-        params.require(:user).permit(:name, :uuid)
+        params.require(:user).permit(:name, :uuid, :latitude, :longitude)
       end
     end
   end
